@@ -7,129 +7,43 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <style>
-        /* a minimalist set of CSS resets */
 
-        /* default to border-box */
-        html {
-            box-sizing: border-box;
-            font-size: 20px;
-        }
-
-        /* adjust typography defaults */
-        body {
-            margin: 1rem;
-            font-family: 'Noto Sans', sans-serif;
-            line-height: 1.5;
-            background-color: white;
-        }
-
-        /* images and videos max out at full width */
-        img,
-        video {
-            height: auto;
-            max-width: 100%;
-        }
-
-        #header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .aProject {
-            background-color: white;
-            box-shadow: 0px 0px 10px #5f6f75;
-            padding: 10px;
-            margin-top: 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .line {
-            background-color: slateblue;
-            min-height: 2px;
-        }
-
-        #subtitle {
-            padding: 5px;
-            font-size: 30px;
-            font-weight: bold;
-        }
-
-        .content {
-            padding-left: 10px;
-            display: block;
-        }
-
-        .icon {
-            justify-self: center;
-            align-self: center;
-            min-width: 100px;
-        }
-        .icon img {
-            max-width: 100px;
-        }
-
-        p {
-            font-size: 15px;
-            padding: 0px;
-            margin: 0px;
-        }
-
-        h2,
-        h3 {
-            padding: 0px;
-            margin: 0px;
-        }
-
-        .verticle {
-            background-color: slateblue;
-            min-width: 2px;
-            margin-left: 10px;
-        }
-
-        .aProjectContent {}
-
-        #projects {}
-    </style>
+    <link rel="stylesheet" href="./styles.css">
+    <script type = "text/javascript" src="./animations.js"></script>
 </head>
 
-<body>
-    <div id="header">
-        <h1>
-            NATE'S PAGE
-        </h1>
-    </div>
-    <div id="projects">
-        <h2>./projects:</h2>
-        <div class="line"></div>
-        <div class="aProject">
-            <div class="icon">
-                <img src="./botLogo.svg">
-            </div>
-            <div class="verticle"></div>
-            <div class="content">
-                <h3>
-                    <b>vc-notification-bot</b> (<a href="https://github.com/NathanNorth/vc-notification-bot">github repo</a>):
-                </h3>
-                <p>
-                    The vc-notification-bot is a dead simple tool to help keep track of when people join voice channels in Discord using the brand new Slash Command API. The bot is built reactively using <a href="https://discord4j.com/">Discord4J</a> and a <a href="https://r2dbc.io/">R2DBC</a> managed PostgreSQL database backend. The project is currently at a (fairly stable) alpha release of <a href="https://github.com/NathanNorth/vc-notification-bot/releases/tag/1.1-ALPHA">version 1.1</a>.
-                </p>
-            </div>
+<body onload="loadingAnims()">
+    <h1>
+        NATE'S PAGE
+    </h1>
+    <h2>./projects:</h2>
+    <div class="horizontalLine"></div>
+    <div class="aProject">
+        <div class="projectIcon">
+            <img src="./botLogo.svg" alt="Bot Logo">
         </div>
-        <div class="aProject">
-            <div class="icon">
-                <img src="./aiBotLogo.png">
-            </div>
-            <div class="verticle"></div>
-            <div class="content">
-                <h3>
-                    <b>Nathan's AI Bot</b> (closed source)
-                </h3>
-                <p>
-                    The AI bot is a Discord bot built using GPT-2 (namely <a href="https://github.com/minimaxir/gpt-2-simple">gpt-2-simple</a>/<a href="https://github.com/minimaxir/aitextgen">aitextgen</a>) and <a href="https://discord4j.com/">Discord4J</a> to create AI conversations trained off of messages sent in your Discord servers. The bot is currently in closed beta and seeing active developement from yours truly. The latest stable release is version 0.1.6, but the bot in online online intermittently in select servers.
-                </p>
-            </div>
+        <div class="verticalLine"></div>
+        <div class="projectDetails">
+            <h3>
+                <b>vc-notification-bot</b> (<a href="https://github.com/NathanNorth/vc-notification-bot">github repo</a>):
+            </h3>
+            <p>
+                The vc-notification-bot is a dead simple tool to help keep track of when people join voice channels in Discord using the brand new Slash Command API. The bot is built reactively using <a href="https://discord4j.com/">Discord4J</a> and a <a href="https://r2dbc.io/">R2DBC</a> managed PostgreSQL database backend. The project is currently at a (fairly stable) alpha release of <a href="https://github.com/NathanNorth/vc-notification-bot/releases/tag/1.1-ALPHA">version 1.1</a>.
+            </p>
+        </div>
+    </div>
+    <div class="aProject">
+        <div class="projectIcon">
+            <img src="./aiBotLogo.png" alt="Bot Logo">
+        </div>
+        <div class="verticalLine"></div>
+        <div class="projectDetails">
+            <h3>
+                <b>Nathan's AI Bot</b> (closed source)
+            </h3>
+            <p>
+                The AI bot is a Discord bot built using GPT-2 (namely <a href="https://github.com/minimaxir/gpt-2-simple">gpt-2-simple</a>/<a href="https://github.com/minimaxir/aitextgen">aitextgen</a>) and <a href="https://discord4j.com/">Discord4J</a> to create AI conversations trained off of messages sent in your Discord servers. The bot is currently in closed beta and seeing active developement from yours truly. The latest stable release is version 0.1.6, but the bot in online online intermittently in select servers.
+            </p>
         </div>
     </div>
 </body></html>
