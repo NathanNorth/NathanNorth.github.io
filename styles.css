@@ -35,10 +35,15 @@ p {
     box-shadow: 0 0 10px #5f6f75;
     padding: 10px;
     margin-top: 10px;
-    display: flex;
     justify-content: center;
     position: relative;
     left: -5000px;
+    min-height: 100px;
+}
+.iconBox {
+    display: flex;
+    max-height: 100px;
+    float: left;
 }
 .horizontalLine {
     background-color: slateblue;
@@ -51,13 +56,11 @@ p {
     margin-right: 10px;
 }
 .projectDetails {
-    display: block;
+    align-content: center;
 }
 .projectIcon {
-    justify-self: center;
-    align-self: center;
     min-width: 100px;
+    max-width: 100px;
 }
 .projectIcon img {
-    max-width: 100px;
 }
