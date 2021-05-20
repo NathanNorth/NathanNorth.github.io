@@ -22,6 +22,7 @@ function fadeIn(x) {
 
 }
 function animateIn(x) {
+    fadeIn(x);
     let id = setInterval(frame, 10);
     let pos = -1000;
     function frame() {

@@ -3,10 +3,11 @@ html {
     font-size: 20px;
 }
 body {
-    margin: 1rem;
+    margin: 2rem;
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.5;
-    background-color: white;
+    background-color: #121212;
+    color: white;
 }
 img,
 video {
@@ -30,38 +31,33 @@ p {
     padding: 0;
     margin: 0;
 }
-.aProject {
-    background-color: white;
-    box-shadow: 0 0 10px #5f6f75;
-    padding: 10px;
-    margin-top: 10px;
-    justify-content: center;
-    position: relative;
-    left: -1000px;
-    min-height: 100px;
-    opacity: 0;
-}
-.iconBox {
+.flexBox {
     display: flex;
-    max-height: 100px;
-    float: left;
+    align-items: center;
 }
 .horizontalLine {
-    background-color: slateblue;
+    background-color: indianred;
     min-height: 2px;
+    margin-bottom: 10px;
+}
+.horizontalSpacer {
+    background-color: indianred;
+    min-height: 2px;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 .verticalLine {
-    background-color: slateblue;
+    background-color: indianred;
     min-width: 2px;
     margin-left: 10px;
     margin-right: 10px;
 }
 .projectDetails {
-    align-content: center;
+    margin-left: 10px;
 }
-.projectIcon {
-    min-width: 100px;
-    max-width: 100px;
-}
-.projectIcon img {
+.vidPlayer {
+    min-width: 50%;
+    max-width: 50%;
 }

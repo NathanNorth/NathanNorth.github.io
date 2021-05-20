@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Spycam</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script type = "text/javascript" src="../animations.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="loadingAnims()">
+<div class = "fadeable">
+    <h1>
+        SPYCAM
+    </h1>
+    <div class="horizontalLine"></div>
+    <div class="flexBox">
+        <div class = "vidPlayer">
+            <video width="1100" height="1000" autoplay muted loop controls>
+                <source src = "../assets/spycam/leaderboardcommand.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+        <div class="projectDetails">
+            <h3>
+                <b>/leaderboards:</b>
+            </h3>
+            <p>
+                Gets leaderboards from all regions, and lets users browse to a specific point in the leaderboard. This command is fully functional; the discord bot is actually making the api calls.
+            </p>
+        </div>
+    </div>
+    <div class="horizontalSpacer"></div>
+    <div class ="flexBox">
+        <div class="vidPlayer">
+            <img width="994" src="../assets/spycam/optinrsocommand.png" alt="command example">
+        </div>
+        <div class="projectDetails">
+            <h3>
+                <b>
+                    /opt-in:
+                </b>
+            </h3>
+            <p>
+                Allows a user to opt into sharing their data with Spycam. Note how this message is ephemeral; nobody can see the message except the user it's directed act.
+            </p>
+        </div>
+    </div>
+    <div class="horizontalSpacer"></div>
+    <div class ="flexBox">
+        <div class="vidPlayer">
+            <img width="706" src="../assets/spycam/profilemockupcommand.png" alt="command example">
+        </div>
+        <div class="projectDetails">
+            <h3>
+                <b>
+                    /profile:
+                </b>
+            </h3>
+            <p>
+                Shows key stats for a player's last ten games and specific info from their last three. By default it shows your own profile but you can optionally look up anyone who's opted-in.
+            </p>
+        </div>
+    </div>
+    <div class="horizontalSpacer"></div>
+    <div class ="flexBox">
+        <div class="vidPlayer">
+            <img width="743" src="../assets/spycam/examplerankupcommand.png" alt="command example">
+        </div>
+        <div class="projectDetails">
+            <h3>
+                <b>
+                    Rank Up Notifications:
+                </b>
+            </h3>
+            <p>
+                After a server designates a channel for announcements, the bot would send simple messages like these to congratulate players on their ranked achievements. I'm deliberately keeping these messages simple: its not about the bot showering you in confetti, the messages should be a catalyst for your discord buddies to give you a proper celebration.
+            </p>
+        </div>
+    </div>
+</div>
+</body></html>
