@@ -34,6 +34,7 @@ p {
 .flexBox {
     display: flex;
     align-items: center;
+    justify-content: end;
 }
 .horizontalLine {
     background-color: indianred;
@@ -60,4 +61,13 @@ p {
 .vidPlayer {
     min-width: 50%;
     max-width: 50%;
+    justify-content: right;
+    justify-items: right;
+    float: right;
+}
+.imgwrap img, video {
+    display: block;
+    width: 100%;
+    height: auto; /* maintain aspect ratio*/
+    margin: auto; /*optional centering of image*/
 }
