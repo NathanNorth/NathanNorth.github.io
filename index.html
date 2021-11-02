@@ -30,25 +30,10 @@
 
 <div style="display: flex;">
     <div style="justify-self: left;">
-        <img src="./assets/aiBotLogo.png" style="max-height: 15rem; max-width: 13rem">
-    </div>
-    <div style="display: block; width: 100%; margin: 10px;">
-        <h2 style="text-align: left;" class="writableNR">
-            AI Bot
-        </h2>
-        <div class="horizontalLine" style="background-color: darkcyan"></div>
-        <div class="aSlide" style="position:relative;">
-            The AI bot is a Discord bot built using fine-tuned GPT-2 models and Discord4J to create AI conversations trained on messages sent in Discord servers.
-            <br>
-            In creating this project I learned how to make my first Discord Bot reactively with the help of a friend and the Discord4J support community. I also learned how to use an SQLite database to store basic user information. AI generation requires a large computational load, and so I built a priority queuing system for high impact processes.
-        </div>
-    </div>
-</div>
-<div style="min-height: 10px"></div>
+        <a href="https://github.com/NathanNorth/vc-notification-bot">
+            <img src="./assets/vcbot%20updated.png" style="max-height: 15rem; max-width: 13rem">
+        </a>
 
-<div style="display: flex;">
-    <div style="justify-self: left;">
-        <img src="./assets/vcbot%20updated.png" style="max-height: 15rem; max-width: 13rem">
     </div>
     <div style="display: block; width: 100%; margin: 10px;">
         <h2 style="text-align: left;" class="writableNR">
@@ -56,7 +41,7 @@
         </h2>
         <div class="horizontalLine" style="background-color: darkcyan"></div>
         <div class="aSlide" style="position:relative;">
-            The vc-notification-bot is a dead simple tool to help keep track of when people join voice channels in Discord using the brand new Slash Command API. The bot is built reactively using Discord4J and a R2DBC managed PostgreSQL database backend. The project is currently at a beta release of version 1.2
+            The vc-notification-bot is a dead simple tool to help keep track of when people join voice channels in Discord using the brand new Slash Command API. The bot is built reactively using <a href="https://discord4j.com/">Discord4J</a> and a <a href="https://r2dbc.io/">R2BDC</a> managed PostgreSQL database backend. The project is currently at a beta release of version 1.2
             <br>
             This project is probably the most useful thing I’ve ever created; me and a couple friends use it every single day. PostgreSQL (and my associated docker container) took forever to debug but I’m really happy that I ended up with a final project that was performant and scalable.
         </div>
@@ -65,7 +50,10 @@
 <div style="min-height: 10px"></div>
 <div style="display: flex;">
     <div style="justify-self: left;">
-        <img src="./assets/github.png" style="max-height: 15rem; max-width: 13rem">
+        <a href="https://github.com/NathanNorth/Riot4J">
+            <img src="./assets/github.png" style="max-height: 15rem; max-width: 13rem">
+        </a>
+
     </div>
     <div style="display: block; width: 100%; margin: 10px;">
         <h2 style="text-align: left;" class="writableNR">
@@ -73,7 +61,7 @@
         </h2>
         <div class="horizontalLine" style="background-color: darkcyan"></div>
         <div class="aSlide" style="position:relative;">
-            Riot4J is a work-in-progress reactive Java wrapper for the Riot Games API with a specific focus on the VALORANT APIs. Riot4J is built with Project Reactor's Netty and Immutable Jackson Objects.
+            Riot4J is a work-in-progress reactive Java wrapper for the <a href="https://developer.riotgames.com/">Riot Games API</a> with a specific focus on the VALORANT APIs. Riot4J is built with <a href="https://github.com/reactor/reactor-netty">Project Reactor's Netty</a> and <a href="https://github.com/FasterXML/jackson">Immutable Jackson Objects</a>.
             <br>
             Riot4J is perhaps the best code I’ve written structurally. I took a very modular approach to design and it’s paid massive dividends as a result. I stepped away from this project for a month or so, and when I came back to add some new APIs it was amazingly easy thanks to that modular structure. This is also my first project with proper javadoc comments, making it the most accessible and learnable tool I’ve open sourced.
         </div>
@@ -90,9 +78,26 @@
         </h2>
         <div class="horizontalLine" style="background-color: darkcyan"></div>
         <div class="aSlide" style="position:relative;">
-            Spycam is an unreleased Discord bot that uses my wrapper of Riot Game’s REST api to synthesize data from VALORANT (a competitive first person shooter) and distribute that data to a new endpoint. For example, one of the core features is viewing a simplified match history breakdown in a discord embed. A significant portion of the bot is ready for launch, but I’m still coordinating setup of the OAuth flow with Riot.
+            Spycam is an unreleased Discord bot that uses <a href="https://github.com/NathanNorth/Riot4J">my wrapper of Riot Game’s REST api</a> to synthesize data from VALORANT (a competitive first person shooter) and distribute that data to a new endpoint. For example, one of the core features is viewing a simplified match history breakdown in a discord embed. A significant portion of the bot is ready for launch, but I’m still coordinating setup of the OAuth flow with Riot.
             <br>
             This is my most exciting WIP project to date. It’s taken a long time to get all the pieces together, from prototyping to pitching it to Riot to implementing and using the production API’s, but the end is in sight, and I’m really excited to launch my first true public facing project.
+        </div>
+    </div>
+</div>
+<div style="min-height: 10px"></div>
+<div style="display: flex;">
+    <div style="justify-self: left;">
+        <img src="./assets/aiBotLogo.png" style="max-height: 15rem; max-width: 13rem">
+    </div>
+    <div style="display: block; width: 100%; margin: 10px;">
+        <h2 style="text-align: left;" class="writableNR">
+            AI Bot
+        </h2>
+        <div class="horizontalLine" style="background-color: darkcyan"></div>
+        <div class="aSlide" style="position:relative;">
+            The AI bot is a Discord bot built using fine-tuned <a href="https://openai.com/blog/better-language-models/">GPT-2 models</a> and <a href="https://discord4j.com/">Discord4J</a> to create AI conversations trained on messages sent in Discord servers.
+            <br>
+            In creating this project I learned how to make my first Discord Bot reactively with the help of a friend and the Discord4J support community. I also learned how to use an SQLite database to store basic user information. AI generation requires a large computational load, and so I built a priority queuing system for high impact processes.
         </div>
     </div>
 </div>
@@ -107,7 +112,7 @@
         </h2>
         <div class="horizontalLine" style="background-color: darkcyan"></div>
         <div class="aSlide" style="position:relative;">
-            Chess3 is an original networked multiplayer turn-based strategy game built in Unity with C#. Chess3 is a collaborative effort that is seeing active development. I manage the project and serve as our lead engineer. Four other friends help with tasks from design to art to coding, interacting with the APIs that I designed.            <br>
+            Chess3 is an original networked multiplayer turn-based strategy game built in <a href="https://unity.com/">Unity</a> with C#. Chess3 is a collaborative effort that is seeing active development. I manage the project and serve as our lead engineer. Four other friends help with tasks from design to art to coding, interacting with the APIs that I designed.            <br>
             This was a great exercise in API design, and a chance to let other people interact with my code. Setting up (and teaching my friends how to use) source control for this was great practice for working in a team.
         </div>
     </div>
@@ -115,7 +120,9 @@
 <div style="min-height: 10px"></div>
 <div style="display: flex;">
     <div style="justify-self: left;">
-        <img src="./assets/github.png" style="max-height: 15rem; max-width: 13rem">
+        <a href="https://github.com/NathanNorth/botw-freecam">
+            <img src="./assets/github.png" style="max-height: 15rem; max-width: 13rem">
+        </a>
     </div>
     <div style="display: block; width: 100%; margin: 10px;">
         <h2 style="text-align: left;" class="writableNR">
@@ -123,7 +130,7 @@
         </h2>
         <div class="horizontalLine" style="background-color: darkcyan"></div>
         <div class="aSlide" style="position:relative;">
-            I maintain a fork of etra0 - ‘s fantastic custom camera for The Legend of Zelda: Breath of the Wild. I learned a little bit of rust to take the core tools that he built, and adapt them to better serve my needs.
+            I maintain a fork of <a href="https://github.com/etra0/botw-freecam">etra0 - ‘s fantastic custom camera for The Legend of Zelda: Breath of the Wild</a>. I learned a little bit of rust to take the core tools that he built, and adapt them to better serve my needs.
             <br>
             As a cinematographer, when I discovered etra0’s work I was astounded by what he had accomplished. His core tool was fantastic, but lacked dealbreaker features for me like editing paths and saving system state. I knew literally nothing about rust, but dove in and was able to add the features that I wanted out of this tool so that I could use it to create the sort of videos I wanted to.
         </div>
